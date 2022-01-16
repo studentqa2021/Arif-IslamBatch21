@@ -1,25 +1,19 @@
 package com.generic;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 public class JavaCollectionPractice {
-   public void getswap (int a, int b) {
-	   
-              
-	   System.out.println("A value before swap ="+a);
-       System.out.println("B value before swap ="+b);
-	   
-	   
-	                  a = a+b;
-                      b = a-b;
-                      a = a-b;
-            System.out.println("A value after swap ="+a);
-            System.out.println("B value after swap ="+b);
-   }
+  
+	public static void main(String[] args) {
+		
+		//WebDriver obj = new webDriver();
+	//ChromeDriver obj = new ChromeDriver();
+	
+		System.setProperty("webdriver.chrome.driver","./Driver/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+	driver.get("https://www.youtube.com//");
+	}
 
 
-     public static void main(String[] args) {
-    	 JavaCollectionPractice obj = new JavaCollectionPractice();
-    	 obj.getswap(10, 20);
-
-     
-     }
 }
